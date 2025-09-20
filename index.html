@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>  
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIT Hackathon 1.0</title>
+    <link rel="stylesheet" href="eithackathon1.0.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">EIT Hackathon</a>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#prizes">Prizes</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1 class="animate-fade-up">EIT Hackathon 1.0</h1>
+            <p class="animate-fade-up">Join us for 48 hours of innovation, coding, and fun! Build amazing projects and win exciting prizes.</p>
+            <div class="hero-buttons animate-fade-up">
+                <a href="#register" class="btn btn-primary">Register Now</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About The Hackathon</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Code Together</h3>
+                    <p>Work with talented developers to build innovative solutions</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Network</h3>
+                    <p>Connect with industry experts and like-minded individuals</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Win Prizes</h3>
+                    <p>Compete for exciting prizes and recognition</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <h2>Event Timeline</h2>
+            <div class="timeline-grid">
+                <div class="timeline-item">
+                    <div class="date">April 15, 2025</div>
+                    <h3>Registration Opens</h3>
+                    <p>Start forming your teams and register for the hackathon</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">May 1, 2025</div>
+                    <h3>Registration Closes</h3>
+                    <p>Last day to register your team</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">May 15, 2025</div>
+                    <h3>Hackathon Starts</h3>
+                    <p>Opening ceremony and project kickoff</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="date">May 17, 2025</div>
+                    <h3>Hackathon Ends</h3>
+                    <p>Project submissions and closing ceremony</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Prizes Section -->
+    <section id="prizes" class="prizes">
+        <div class="container">
+            <h2>Prizes</h2>
+            <div class="prize-cards">
+                <div class="prize-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>1st Place</h3>
+                    <p class="prize-amount">&#8377; 50000</p>
+                </div>
+                <div class="prize-card">
+                    <i class="fas fa-award"></i>
+                    <h3>2nd Place</h3>
+                    <p class="prize-amount">&#8377; 30000</p>
+                </div>
+                <div class="prize-card">
+                    <i class="fas fa-medal"></i>
+                    <h3>3rd Place</h3>
+                    <p class="prize-amount">&#8377; 20000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Registration Section -->
+    <section id="register" class="register">
+        <div class="container">
+            <h2>Register Now</h2>
+            <!-- Form for a  team and register for the hackathon -->
+            <form id="registration-form" class="registration-form" action="#register.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="team-name">Team Name</label>
+                    <input type="text" id="team-name" name="teamName" required>
+                </div>
+                <div class="form-group">
+                    <label for="team-size">Team Size</label>
+                    <select id="team-size" name="teamSize" required>
+                        <option value="2">2 Members</option>
+                        <option value="3">3 Members</option>
+                        <option value="4">4 Members</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="project-idea">Project Idea</label>
+                    <textarea id="project-idea" name="projectIdea" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <!------------------------------- Footer -------------------------------------------------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>EIT Hackathon</h3>
+                    <p>Join us for an exciting journey of innovation and creativity.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#prizes">Prizes</a></li>
+                        <li><a href="#register">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 EIT Hackathon. All rights reserved.</p>
+                <p>Designed With <i class="fa fa-heart" style="font-size:20px;color:red"></i> By EIT HACKATHON TEAM</p>
+            </div>
+        </div>
+    </footer>
+    <script src="eithackathon1.0.js"></script>
+    <!-- <script src="......" async defer type="text/javascript"></script> -->
+</body>
+</html>
